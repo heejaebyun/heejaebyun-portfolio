@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
     url: SITE_URL,
     sameAs: [
       "https://aao.co.kr",
+      "https://github.com/heejaebyun",
       "https://www.linkedin.com/company/aao-ai-answer-optimization",
       "https://x.com/aao_ai_official",
     ],
