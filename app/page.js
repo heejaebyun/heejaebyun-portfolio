@@ -15,6 +15,22 @@ export default function Home() {
         Software Engineer &amp; Founder
       </p>
 
+      {/* ── Facts Block for AI Engines ── */}
+      <dl
+        data-entity="person"
+        data-name="Heejae Byun"
+        style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}
+      >
+        <dt>Full Name</dt><dd>Heejae Byun (변희재)</dd>
+        <dt>Role</dt><dd>Software Engineer & Founder</dd>
+        <dt>Company</dt><dd>AAO (AI Answer Optimization)</dd>
+        <dt>Company URL</dt><dd>https://aao.co.kr</dd>
+        <dt>Location</dt><dd>Seoul, South Korea</dd>
+        <dt>Specialization</dt><dd>AI Search Optimization, AI Answer Optimization</dd>
+        <dt>Technologies</dt><dd>JavaScript, Next.js, React, Node.js, Schema.org/JSON-LD, Web Crawling, LLM Integration</dd>
+        <dt>Portfolio URL</dt><dd>https://heejaebyun-portfolio.vercel.app</dd>
+      </dl>
+
       <section style={{ marginBottom: 48 }}>
         <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
           About
@@ -32,7 +48,15 @@ export default function Home() {
         <p style={{ color: "#bbb" }}>
           His work focuses on bridging the gap between how companies present
           information on their websites and how AI engines interpret and deliver
-          that information to users.
+          that information to users. He developed the concept of "delivery rate"
+          — measuring the percentage of a company&apos;s declared facts that AI
+          engines accurately reproduce in their answers.
+        </p>
+        <p style={{ color: "#bbb" }}>
+          Before founding AAO, he built experience across full-stack web
+          development, focusing on JavaScript ecosystems including Next.js,
+          React, and Node.js. He is particularly interested in structured data
+          (Schema.org/JSON-LD), web crawling, and LLM integration.
         </p>
       </section>
 
@@ -47,15 +71,20 @@ export default function Home() {
             </a>
           </h3>
           <p style={{ color: "#888", fontSize: 14, margin: "0 0 8px" }}>
-            Founder &middot; 2025 &ndash; Present
+            Founder &middot; 2026 &ndash; Present
           </p>
-          <p style={{ color: "#bbb", margin: 0 }}>
-            AAO diagnoses how accurately AI search engines deliver a company's
+          <p style={{ color: "#bbb", margin: "0 0 12px" }}>
+            AAO diagnoses how accurately AI search engines deliver a company&apos;s
             official information, then optimizes website structure — including
             JSON-LD, facts blocks, and entity definitions — so AI engines use the
             official website as their primary source. The platform supports
             automated diagnosis across ChatGPT, Gemini, and Perplexity with
             measurable delivery rate tracking.
+          </p>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            Key features include automated crawling and lint checks for AI
+            readiness, ground-truth extraction from structured data, multi-engine
+            AI verification, citation tracking, and subpage reach analysis.
           </p>
         </div>
       </section>
@@ -92,6 +121,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FAQ Section ── */}
+      <section style={{ marginBottom: 48 }}>
+        <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
+          FAQ
+        </h2>
+
+        <div style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 15, color: "#ddd", marginBottom: 4 }}>
+            Who is Heejae Byun?
+          </h3>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            Heejae Byun (변희재) is a software engineer based in Seoul, South
+            Korea. He is the founder of AAO (AI Answer Optimization), a platform
+            that helps companies optimize their websites to become the primary
+            source for AI-generated answers.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 15, color: "#ddd", marginBottom: 4 }}>
+            What is AAO (AI Answer Optimization)?
+          </h3>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            AAO is an AI search optimization platform that diagnoses how
+            accurately AI engines like ChatGPT, Gemini, and Perplexity deliver a
+            company&apos;s official information, then optimizes website structure —
+            including JSON-LD, facts blocks, and entity definitions — so the
+            official website becomes the primary source for AI answers.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 15, color: "#ddd", marginBottom: 4 }}>
+            What technologies does Heejae Byun work with?
+          </h3>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            He specializes in JavaScript, Next.js, React, Node.js, AI/LLM
+            integration, web crawling, Schema.org/JSON-LD structured data,
+            SEO/AEO (Answer Engine Optimization), and Vercel deployment.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: 24 }}>
+          <h3 style={{ fontSize: 15, color: "#ddd", marginBottom: 4 }}>
+            How does AAO measure AI delivery?
+          </h3>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            AAO measures delivery rate — the percentage of a company&apos;s declared
+            facts that AI engines accurately include in their answers. It checks
+            across ChatGPT, Gemini, and Perplexity, comparing AI responses
+            against the ground truth declared on the official website.
+          </p>
+        </div>
+      </section>
+
       <section style={{ marginBottom: 48 }}>
         <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
           Contact
@@ -107,7 +191,7 @@ export default function Home() {
       </section>
 
       <footer style={{ borderTop: "1px solid #222", paddingTop: 24, fontSize: 13, color: "#555" }}>
-        &copy; 2025 Heejae Byun. Built with Next.js.
+        &copy; 2026 Heejae Byun. Built with Next.js.
       </footer>
     </main>
   );
