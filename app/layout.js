@@ -3,7 +3,7 @@ const SITE_URL = "https://heejaebyun-portfolio.vercel.app";
 export const metadata = {
   title: "Heejae Byun | Software Engineer & Founder of AAO",
   description:
-    "Heejae Byun (변희재) is a software engineer and founder of AAO (AI Answer Optimization), an AI search optimization platform based in Seoul, South Korea. He specializes in helping companies become the primary source for AI-generated answers across ChatGPT, Gemini, and Perplexity.",
+    "Heejae Byun (변희재) — Software engineer & founder of AAO, an AI search optimization platform based in Seoul, South Korea.",
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: SITE_URL },
   openGraph: {
