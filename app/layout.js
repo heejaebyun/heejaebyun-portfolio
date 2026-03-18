@@ -25,9 +25,11 @@ export default function RootLayout({ children }) {
     url: SITE_URL,
     sameAs: [
       "https://aao.co.kr",
+      "https://aao.co.kr/ai-profile",
       "https://github.com/heejaebyun",
-      "https://www.linkedin.com/company/aao-ai-answer-optimization",
-      "https://x.com/aao_ai_official",
+      "https://www.linkedin.com/in/heejae-byun-2887671b3/",
+      "https://www.producthunt.com/@heejaebyun",
+      "https://www.indiehackers.com/heejaebyun",
     ],
     worksFor: {
       "@type": "Organization",

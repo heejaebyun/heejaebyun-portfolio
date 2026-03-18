@@ -182,9 +182,39 @@ export default function Home() {
         </h2>
         <ul style={{ listStyle: "none", padding: 0, color: "#bbb" }}>
           <li style={{ marginBottom: 8 }}>
-            Web:{" "}
+            AAO:{" "}
             <a href="https://aao.co.kr" style={{ color: "#7b9fff", textDecoration: "none" }}>
               aao.co.kr
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            AI Profile:{" "}
+            <a href="https://aao.co.kr/ai-profile" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              aao.co.kr/ai-profile
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            GitHub:{" "}
+            <a href="https://github.com/heejaebyun" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              github.com/heejaebyun
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            LinkedIn:{" "}
+            <a href="https://www.linkedin.com/in/heejae-byun-2887671b3/" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              linkedin.com/in/heejae-byun
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            Product Hunt:{" "}
+            <a href="https://www.producthunt.com/@heejaebyun" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              producthunt.com/@heejaebyun
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            Indie Hackers:{" "}
+            <a href="https://www.indiehackers.com/heejaebyun" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              indiehackers.com/heejaebyun
             </a>
           </li>
         </ul>
