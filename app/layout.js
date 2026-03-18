@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       "https://www.linkedin.com/in/heejae-byun-2887671b3/",
       "https://www.producthunt.com/@heejaebyun",
       "https://www.indiehackers.com/heejaebyun",
+      "https://medium.com/@bhj31029943",
     ],
     worksFor: {
       "@type": "Organization",
