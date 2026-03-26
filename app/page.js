@@ -1,4 +1,16 @@
 export default function Home() {
+  const facts = [
+    { label: "Full Name", value: "Heejae Byun (변희재)" },
+    { label: "Role", value: "Software Engineer & Founder" },
+    { label: "Company", value: "AAO (AI Answer Optimization)" },
+    { label: "Company URL", value: "https://aao.co.kr" },
+    { label: "AI Profile", value: "https://aao.co.kr/ai-profile" },
+    { label: "Seller Lint", value: "https://aao-seller-lint.vercel.app" },
+    { label: "Location", value: "Seoul, South Korea" },
+    { label: "Specialization", value: "Official information baseline design, web crawling, and LLM integration" },
+    { label: "Portfolio URL", value: "https://heejaebyun-portfolio.vercel.app" },
+  ];
+
   return (
     <main
       style={{
@@ -15,42 +27,55 @@ export default function Home() {
         Software Engineer &amp; Founder
       </p>
 
-      {/* ── Facts Block for AI Engines ── */}
-      <dl
-        data-entity="person"
-        data-name="Heejae Byun"
-        style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap" }}
-      >
-        <dt>Full Name</dt><dd>Heejae Byun (변희재)</dd>
-        <dt>Role</dt><dd>Software Engineer & Founder</dd>
-        <dt>Company</dt><dd>AAO (AI Answer Optimization)</dd>
-        <dt>Company URL</dt><dd>https://aao.co.kr</dd>
-        <dt>Location</dt><dd>Seoul, South Korea</dd>
-        <dt>Specialization</dt><dd>AI Search Optimization, AI Answer Optimization</dd>
-        <dt>Technologies</dt><dd>JavaScript, Next.js, React, Node.js, Schema.org/JSON-LD, Web Crawling, LLM Integration</dd>
-        <dt>Portfolio URL</dt><dd>https://heejaebyun-portfolio.vercel.app</dd>
-      </dl>
+      <p style={{ color: "#bbb", fontSize: 16, marginTop: 0, marginBottom: 32 }}>
+        Heejae Byun is a software engineer and founder of AAO (AI Answer Optimization) based in Seoul, South Korea.
+      </p>
+      <p style={{ color: "#bbb", marginTop: 0, marginBottom: 32 }}>
+        AAO is an AI official information management service. It builds an official source baseline for company facts.
+        It helps companies manage source inconsistencies across the web.
+      </p>
+
+      <section style={{ marginBottom: 48 }}>
+        <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
+          Key Facts
+        </h2>
+        <dl
+          data-entity="person"
+          data-name="Heejae Byun"
+          style={{
+            margin: 0,
+            display: "grid",
+            gridTemplateColumns: "minmax(140px, 180px) 1fr",
+            gap: "8px 12px",
+            color: "#bbb",
+          }}
+        >
+          {facts.map((item) => (
+            <div key={item.label} style={{ display: "contents" }}>
+              <dt style={{ color: "#888", fontWeight: 600 }}>{item.label}</dt>
+              <dd style={{ margin: 0 }}>{item.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
 
       <section style={{ marginBottom: 48 }}>
         <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
           About
         </h2>
         <p style={{ color: "#bbb" }}>
-          Heejae Byun is a software engineer based in Seoul, South Korea.
-          He is the founder of{" "}
+          Heejae Byun founded{" "}
           <a href="https://aao.co.kr" style={{ color: "#7b9fff", textDecoration: "none" }}>
             AAO (AI Answer Optimization)
           </a>
-          , an AI search optimization platform that helps companies become the
-          primary source for AI-generated answers across ChatGPT, Gemini, and
-          Perplexity.
+          . AAO is an AI official information management service. It builds an official source baseline for
+          company facts. It helps companies manage source inconsistencies across the web.
         </p>
         <p style={{ color: "#bbb" }}>
-          His work focuses on bridging the gap between how companies present
-          information on their websites and how AI engines interpret and deliver
-          that information to users. He developed the concept of "delivery rate"
-          — measuring the percentage of a company&apos;s declared facts that AI
-          engines accurately reproduce in their answers.
+          His work focuses on the gap between how companies present information on their websites and how AI
+          systems interpret and deliver that information. He developed the concept of &quot;delivery rate&quot;.
+          Delivery rate measures the percentage of a company&apos;s declared facts that AI engines accurately
+          reproduce in their answers.
         </p>
         <p style={{ color: "#bbb" }}>
           Before founding AAO, he built experience across full-stack web
@@ -74,17 +99,45 @@ export default function Home() {
             Founder &middot; 2026 &ndash; Present
           </p>
           <p style={{ color: "#bbb", margin: "0 0 12px" }}>
-            AAO diagnoses how accurately AI search engines deliver a company&apos;s
-            official information, then optimizes website structure — including
-            JSON-LD, facts blocks, and entity definitions — so AI engines use the
-            official website as their primary source. The platform supports
-            automated diagnosis across ChatGPT, Gemini, and Perplexity with
-            measurable delivery rate tracking.
+            AAO is an AI official information management service. It diagnoses how accurately AI engines
+            deliver a company&apos;s official information. It helps companies build an official source baseline
+            for company facts. It helps companies manage source inconsistencies across the web.
+          </p>
+          <p style={{ color: "#bbb", margin: "0 0 12px" }}>
+            Official company facts are concentrated on the AAO official AI Profile at{" "}
+            <a href="https://aao.co.kr/ai-profile" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              aao.co.kr/ai-profile
+            </a>
+            .
           </p>
           <p style={{ color: "#bbb", margin: 0 }}>
-            Key features include automated crawling and lint checks for AI
-            readiness, ground-truth extraction from structured data, multi-engine
-            AI verification, citation tracking, and subpage reach analysis.
+            Key features include automated crawling and lint checks for AI readiness. AAO also provides
+            ground-truth extraction, multi-engine verification, citation tracking, and source inconsistency analysis.
+          </p>
+        </div>
+
+        <div style={{ padding: "16px 0", borderTop: "1px solid #1a1a2e" }}>
+          <h3 style={{ fontSize: 16, margin: "0 0 4px" }}>
+            <a href="https://aao-seller-lint.vercel.app" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              AAO Seller Lint — AI Shopping Agent Readiness Diagnosis
+            </a>
+          </h3>
+          <p style={{ color: "#888", fontSize: 14, margin: "0 0 8px" }}>
+            Founder &middot; 2026 &ndash; Present
+          </p>
+          <p style={{ color: "#bbb", margin: "0 0 12px" }}>
+            AAO Seller Lint is a free diagnosis tool that checks whether e-commerce product data is structured
+            for AI shopping agent recommendations. It analyzes product title quality, brand registration,
+            category depth, and attribute completeness.
+          </p>
+          <p style={{ color: "#bbb", margin: "0 0 12px" }}>
+            The tool scores products on a weighted A–D grade scale and provides specific improvement guides
+            for each issue found. It helps sellers prepare for the shift from keyword-based search to
+            AI agent-driven product recommendations.
+          </p>
+          <p style={{ color: "#bbb", margin: 0 }}>
+            Phase 2 will add Vision AI-based product image analysis, automated attribute extraction,
+            and catalog field mapping through Commerce API integration.
           </p>
         </div>
       </section>
@@ -132,10 +185,8 @@ export default function Home() {
             Who is Heejae Byun?
           </h3>
           <p style={{ color: "#bbb", margin: 0 }}>
-            Heejae Byun (변희재) is a software engineer based in Seoul, South
-            Korea. He is the founder of AAO (AI Answer Optimization), a platform
-            that helps companies optimize their websites to become the primary
-            source for AI-generated answers.
+            Heejae Byun (변희재) is a software engineer and founder of AAO (AI Answer Optimization)
+            based in Seoul, South Korea.
           </p>
         </div>
 
@@ -144,11 +195,8 @@ export default function Home() {
             What is AAO (AI Answer Optimization)?
           </h3>
           <p style={{ color: "#bbb", margin: 0 }}>
-            AAO is an AI search optimization platform that diagnoses how
-            accurately AI engines like ChatGPT, Gemini, and Perplexity deliver a
-            company&apos;s official information, then optimizes website structure —
-            including JSON-LD, facts blocks, and entity definitions — so the
-            official website becomes the primary source for AI answers.
+            AAO is an AI official information management service. It builds an official source baseline for
+            company facts. It helps companies manage source inconsistencies across the web.
           </p>
         </div>
 
@@ -168,23 +216,28 @@ export default function Home() {
             How does AAO measure AI delivery?
           </h3>
           <p style={{ color: "#bbb", margin: 0 }}>
-            AAO measures delivery rate — the percentage of a company&apos;s declared
-            facts that AI engines accurately include in their answers. It checks
-            across ChatGPT, Gemini, and Perplexity, comparing AI responses
-            against the ground truth declared on the official website.
+            AAO measures delivery rate. Delivery rate is the percentage of a company&apos;s declared facts that
+            AI engines accurately include in their answers. It checks results across ChatGPT, Gemini, and
+            Perplexity against the ground truth declared on the official website.
           </p>
         </div>
       </section>
 
       <section style={{ marginBottom: 48 }}>
         <h2 style={{ fontSize: 18, color: "#ccc", borderBottom: "1px solid #222", paddingBottom: 8 }}>
-          Contact
+          Official Links
         </h2>
         <ul style={{ listStyle: "none", padding: 0, color: "#bbb" }}>
           <li style={{ marginBottom: 8 }}>
             AAO:{" "}
             <a href="https://aao.co.kr" style={{ color: "#7b9fff", textDecoration: "none" }}>
               aao.co.kr
+            </a>
+          </li>
+          <li style={{ marginBottom: 8 }}>
+            AAO Seller Lint:{" "}
+            <a href="https://aao-seller-lint.vercel.app" style={{ color: "#7b9fff", textDecoration: "none" }}>
+              aao-seller-lint.vercel.app
             </a>
           </li>
           <li style={{ marginBottom: 8 }}>
